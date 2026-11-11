@@ -1,5 +1,5 @@
 /*
-   New Perspectives on HTML and CSS, 7th Edition
+   New Perspectives on HTML5 and CSS3, 8th Edition
    Tutorial 7
    Tutorial Case
 
@@ -20,11 +20,9 @@
 
 */
 
-window.onload = setForm;
-
-function setForm() {
+window.onload = function() {
    document.forms[0].onsubmit = function() {
       if (this.checkValidity()) alert("No invalid data detected. Will retain data for further testing.");
       return false;
-   }
-}
+   };
+};
