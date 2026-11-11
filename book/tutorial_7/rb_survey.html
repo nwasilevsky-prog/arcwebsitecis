@@ -87,8 +87,17 @@
 			
 			<div class="formRow">
 			<label for="phone">Phone number</label>
-			<input name="custPhone" id="phone" type="tel" placeholder="nnn-nnn-nnnn" pattern="^\d{10}$|^(\(\d{3}\)\s*)?\d{3}[\s-]?\d{4}$" />
-			</div>
+			<input name="custPhone" id="phone" type="tel" placeholder="(nnn) nnn-nnnn"
+			pattern="^\d{10}$|^(\d3\s*)?\d{3}[\s\-]?\d{4}$" />
+			<!--the below does not work from the textbook.
+			missing literal "\-" hyphen due to it being inside a
+			character class.
+			-->
+			<!--pattern="^\d{10}$|^(
+			\d
+			3
+			\s*)?\d{3}[\s-]?\d{4}$" />-->
+</div>
 		
 			
 			<div class="formRow">
