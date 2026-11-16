@@ -6,7 +6,9 @@
    Tutorial Case
 
    Cinema Penguin General Style Sheet
-  
+    Author: Nadia Wasilevsky
+   Date:   11/12/26
+ 
    Filename: cp_styles.css
 
 */
@@ -25,7 +27,7 @@ body {
    -webkit-flex-flow: row wrap;
    flex-flow: row wrap;    
    margin: 0px auto;
-   min-width: 320px;
+   min-width: 4px;
    max-width: 1100px;  
    padding: 10px;
    width: 100%;
